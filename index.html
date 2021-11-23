@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>⛅ Rubinder's Forecast</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="contentBorder">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col col-lg-2">
+              <img src="images/MainLogo.png" class="img-fluid" alt="..." />
+                 <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-6">
+              <input
+                type="search"
+                placeholder="📍 Search another City..."
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+                class="form-control shadow-sm"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                      type="submit"
+                      value="Search 🔍"
+                      class="form-control btn btn-primary shadow-sm"
+                    />
+            </div>
+            <div class="col-3">
+              <button
+                class="btn btn-success w-100"
+                id="current-location-button"
+                class="button"
+              >
+                Current 🧭 
+              </button>
+            </div>
+          </div>
+        </form>
+              <div class="currentWeatherInfo">
+                <div class="card text-center">
+  <div class="card-header">
+      <h1 id="city"></h1>
+                <br />
+                  <h4>/h4>
+                
+  </div>
+  <div class="card-body">
+    <img
+                        src="images/Snow_Outline.svg"
+                        alt="Cloudy icon"
+                        class="weather-icon float-center"
+                      />
+    <h5 class="card-title">
+       <p class="card-title"><small class="text-muted">Current Temperature</small></p>
+      <span class="temperature" id="temperature"></span>
+      <span>
+      <a href="#" id="celsius-link" class="units" >°C</a> <span class="units">|</span>
+      <a href="#" id="fahrenheit-link" class="units" >°F</a>
+    </span>
+    </h5>
+  <div class="card-group">
+  <div class="card">
+    <div class="card-body">
+      <img src="images/Rain_Outline.svg" alt="Description icon" class="weatherIcon">
+      <p class="card-title"><small class="text-muted">Description</small></p>
+      <h5 class="card-text"><span id="description"></span></h5>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <img src="images/Sun_Outline.svg" alt="Humidity icon" class="weatherIcon">
+      <p class="card-title"><small class="text-muted">Humidity</small></p>
+      <h5 class="card-text"><span id="humidity"></span>%</h5>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <img src="images/Flying kite_Outline.svg" alt="WindSpeed icon" class="weatherIcon">
+      <p class="card-title"><small class="text-muted">Wind Speed</small></p>
+      <h5 class="card-text"><span id="wind"></span>km/h</h5>
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="card-footer text-muted">
+    🗓️ 5 DAY FORECAST
+  </div>
+</div>
+              <br />
+              <section class="FutureForecast">
+                <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col" class="forecastHeadings">Date</th>
+      <th scope="col" class="forecastHeadings">Day</th>
+      <th scope="col" class="forecastHeadings">Real Feel</th>
+      <th scope="col"class="forecastHeadings" > 🌡️ Temperature</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Date</th>
+      <td>Monday</td>
+      <td class="forecastEmoji">🥶</td>
+      <td class="forecastEmoji">-10°c</td>
+    </tr>
+    <tr>
+      <th scope="row">Date</th>
+      <td>Tuesday</td>
+      <td class="forecastEmoji">🥶</td>
+      <td class="forecastEmoji">-10°c</td>
+    </tr>
+    <tr>
+      <th scope="row">Date</th>
+      <td>Thursday</td>
+      <td class="forecastEmoji">🥶</td>
+      <td class="forecastEmoji">-10°c</td>
+    </tr>
+     <tr>
+      <th scope="row">Date</th>
+      <td>Friday</td>
+      <td class="forecastEmoji">🥶</td>
+      <td class="forecastEmoji">-10°c</td>
+    </tr>
+     <tr>
+      <th scope="row">Date</th>
+      <td>Saturday</td>
+      <td class="forecastEmoji">🥶</td>
+      <td class="forecastEmoji"> -10°c</td>
+    </tr>
+  </tbody>
+</table>   
+              </section>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+       <br />
+    </div> 
+    <footer>
+      Open-sourced code by <a href="https://www.linkedin.com/in/rubinder/">Rubinder</a>
+    </footer>
+    <img src="images/forecast.svg" alt="Rubinder's Forecast" class="footerImage">
+    <script src="src/script.js"></script>
+  </body>
+</html>
