@@ -54,29 +54,26 @@
   <div class="card-header">
       <h1 id="city"></h1>
                 <br />
-                  <h4>/h4>
+                  <h4>Last updated: <span id="date"></span></h4>
                 
   </div>
   <div class="card-body">
     <img
-                        src="images/Snow_Outline.svg"
-                        alt="Cloudy icon"
+                        src=""
+                        alt="Weather icon"
                         class="weather-icon float-center"
                         id="icon"
                       />
     <h5 class="card-title">
        <p class="card-title"><small class="text-muted">Current Temperature</small></p>
       <span class="temperature" id="temperature"></span>
-      <span>
-      <a href="#" id="celsius-link" class="units" >°C</a> <span class="units">|</span>
-      <a href="#" id="fahrenheit-link" class="units" >°F</a>
-    </span>
+      <span class="units"> °C</span>
     </h5>
   <div class="card-group">
   <div class="card">
     <div class="card-body">
       <img src="images/Rain_Outline.svg" alt="Description icon" class="weatherIcon">
-      <p class="card-title"><small class="text-muted">Description</small></p>
+      <p class="card-title"><small class="text-muted">Conditions</small></p>
       <h5 class="card-text"><span id="description"></span></h5>
     </div>
   </div>
@@ -97,7 +94,7 @@
 </div>
   </div>
   <div class="card-footer text-muted">
-    🗓️ 5 DAY FORECAST
+    🗓️ WEEKLY FORECAST
   </div>
 </div>
               <br />
@@ -105,44 +102,13 @@
                 <table class="table table-hover">
   <thead>
     <tr>
-      <th scope="col" class="forecastHeadings">Date</th>
       <th scope="col" class="forecastHeadings">Day</th>
       <th scope="col" class="forecastHeadings">Real Feel</th>
-      <th scope="col"class="forecastHeadings" > 🌡️ Temperature</th>
+      <th scope="col" class="forecastHeadings">Lows of </th>
+      <th scope="col"class="forecastHeadings" > Highs of</th>
     </tr>
+    <tbody class="weather-forecast" id="forecast"></tbody>
   </thead>
-  <tbody>
-    <tr>
-      <th scope="row">Date</th>
-      <td>Monday</td>
-      <td class="forecastEmoji">🥶</td>
-      <td class="forecastEmoji">-10°c</td>
-    </tr>
-    <tr>
-      <th scope="row">Date</th>
-      <td>Tuesday</td>
-      <td class="forecastEmoji">🥶</td>
-      <td class="forecastEmoji">-10°c</td>
-    </tr>
-    <tr>
-      <th scope="row">Date</th>
-      <td>Thursday</td>
-      <td class="forecastEmoji">🥶</td>
-      <td class="forecastEmoji">-10°c</td>
-    </tr>
-     <tr>
-      <th scope="row">Date</th>
-      <td>Friday</td>
-      <td class="forecastEmoji">🥶</td>
-      <td class="forecastEmoji">-10°c</td>
-    </tr>
-     <tr>
-      <th scope="row">Date</th>
-      <td>Saturday</td>
-      <td class="forecastEmoji">🥶</td>
-      <td class="forecastEmoji"> -10°c</td>
-    </tr>
-  </tbody>
 </table>   
               </section>
               <br />
