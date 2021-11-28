@@ -98,8 +98,8 @@ function displayWeekForecast(response) {
               class="dayForecastImage"
             />
             <div class="forecastDay">
-              <span class="maxForecast">${maxTemp}</span>°/<span class="minForecast"
-                >${minTemp}</span
+              <span class="maxForecast">📈${maxTemp}</span>°/<span class="minForecast"
+                >📉${minTemp}</span
               >°
             </div>
           </div>
